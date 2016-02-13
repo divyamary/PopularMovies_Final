@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="poster_width">185</integer>
+    <integer name="num_columns">2</integer>
+    <integer name="default_vote_count">0</integer>
+    <integer name="vote_count">100</integer>
+    <integer name="layout_bottom_margin">2</integer>
+    <integer name="layout_right_margin">10</integer>
+</resources>

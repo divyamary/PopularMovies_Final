@@ -1,0 +1,398 @@
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/scrollView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image_backdrop"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/backdrop_image"
+                android:scaleType="fitXY"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view1"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/card_horizontal_margin"
+                android:layout_marginRight="@dimen/card_horizontal_margin"
+                android:layout_marginTop="@dimen/card_vertical_margin"
+                card_view:cardBackgroundColor="@color/grey_50"
+                card_view:cardCornerRadius="@dimen/card_radius"
+                card_view:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/layout_padding">
+
+                    <TextView
+                        android:id="@+id/text_overview_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/text_bottom_margin"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/text_overview"
+                        android:textAllCaps="true"/>
+
+                    <TextView
+                        android:id="@+id/text_overview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:breakStrategy="high_quality"
+                        android:fontFamily="sans-serif-light"
+                        android:lineSpacingMultiplier="1.2"
+                        android:textColor="@color/grey_900"/>
+
+                    <TextView
+                        android:id="@+id/text_genre_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/text_bottom_margin"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/genres_title"/>
+
+                    <LinearLayout
+                        android:id="@+id/genre_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/layout_bottom_margin"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view2"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/card_horizontal_margin"
+                android:layout_marginRight="@dimen/card_horizontal_margin"
+                android:layout_marginTop="@dimen/card_vertical_margin"
+                card_view:cardBackgroundColor="@color/grey_50"
+                card_view:cardCornerRadius="@dimen/card_radius"
+                card_view:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/layout_padding">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/layout_bottom_margin"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/view_right_margin"
+                                android:background="@drawable/ic_star"
+                                android:contentDescription="@string/icon_rating"/>
+
+
+                            <TextView
+                                android:id="@+id/text_vote_average"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/view_right_margin"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+                            <TextView
+                                android:id="@+id/text_vote_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/layout_bottom_margin"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/view_right_margin"
+                                android:background="@drawable/ic_clock"
+                                android:contentDescription="@string/icon_runtime"/>
+
+
+                            <TextView
+                                android:id="@+id/text_runtime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/view_right_margin"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+                            <TextView
+                                android:id="@+id/text_minutes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:gravity="center"
+                                android:text="@string/text_minutes"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/view_right_margin"
+                                android:background="@drawable/ic_calendar"
+                                android:contentDescription="@string/icon_calendar"/>
+
+                            <TextView
+                                android:id="@+id/text_release_year"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/view_right_margin"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+                            <TextView
+                                android:id="@+id/text_release_ddmm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-condensed"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/layout_padding">
+
+                        <TextView
+                            android:id="@+id/text_director_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/text_bottom_margin"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="@string/text_director"
+                            android:textAllCaps="true"/>
+
+                        <TextView
+                            android:id="@+id/text_director"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/text_bottom_margin"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="@color/grey_900"
+                            />
+
+                        <TextView
+                            android:id="@+id/text_screenplay_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/text_bottom_margin"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="@string/screenplay_title"
+                            android:textAllCaps="true"/>
+
+                        <TextView
+                            android:id="@+id/text_screenplay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/text_bottom_margin"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="@color/grey_900"/>
+
+
+                        <TextView
+                            android:id="@+id/text_composer_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/text_bottom_margin"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="@string/music_title"
+                            android:textAllCaps="true"/>
+
+                        <TextView
+                            android:id="@+id/text_composer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/text_bottom_margin"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="@color/grey_900"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:padding="@dimen/layout_padding">
+
+                        <TextView
+                            android:id="@+id/text_spoken_language_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/text_bottom_margin"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="@string/spoken_langs_title"
+                            />
+
+                        <TextView
+                            android:id="@+id/text_spoken_language"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/text_bottom_margin"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="@color/grey_900"
+                            />
+
+                        <TextView
+                            android:id="@+id/text_certification_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/text_bottom_margin"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="@string/text_certified"
+                            android:textAllCaps="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/text_certificate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:textColor="@color/grey_900"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view3"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/card_vertical_margin"
+                android:layout_marginLeft="@dimen/card_horizontal_margin"
+                android:layout_marginRight="@dimen/card_horizontal_margin"
+                android:layout_marginTop="@dimen/card_vertical_margin"
+                card_view:cardBackgroundColor="@color/grey_50"
+                card_view:cardCornerRadius="@dimen/card_radius"
+                card_view:cardElevation="@dimen/card_elevation">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/text_cast_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/separator_margin"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/cast_title"/>
+
+                    <HorizontalScrollView
+                        android:id="@+id/hsv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:scrollbars="horizontal">
+
+
+                        <LinearLayout
+                            android:id="@+id/cast_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:clickable="true"
+            android:src="@drawable/ic_add_white"
+            app:layout_anchor="@id/image_backdrop"
+            app:layout_anchorGravity="bottom|right|end"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Movie Reel</string>
+    <string name="action_about">About</string>
+    <string name="title_activity_movie_detail">MovieDetailActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+    <!--URL strings-->
+    <string name="url_base_image">http://image.tmdb.org/t/p/</string>
+    <string name="sort_popularity">popularity.desc</string>
+    <string name="sort_rating">vote_average.desc</string>
+    <string name="poster_image_size">w185</string>
+    <string name="backdrop_image_size">w500</string>
+    <string name="profile_image_size">w154</string>
+    <string name="default_vote_count">0</string>
+    <string name="vote_count">100</string>
+    <string name="vote_format">%.1f</string>
+
+    <string name="text_votes">votes</string>
+    <string name="text_certified">Certified</string>
+    <string name="text_director">Director</string>
+    <string name="text_minutes">min</string>
+    <string name="text_overview">Overview</string>
+    <string name="review_by">Review by: </string>
+    <string name="text_not_available">N/A</string>
+    <string name="genres_title">GENRES</string>
+    <string name="screenplay_title">SCREENPLAY</string>
+    <string name="music_title">MUSIC</string>
+    <string name="spoken_langs_title">SPOKEN LANGUAGES</string>
+    <string name="cast_title">CAST</string>
+    <string name="info_tab">INFO</string>
+    <string name="reviews_tab">REVIEWS</string>
+    <string name="videos_tab">VIDEOS</string>
+    <string name="about_title">About</string>
+    <string name="about_text">All icons sourced from the Icons8 collection https://icons8.com/</string>
+    <string name="tmdb_disclaimer_text">This app uses the TMDb API but is not endorsed or certified by TMDb.</string>
+    <string name="empty_favorites_text">You haven\'t favorited any movies yet...</string>
+    <string name="empty_reviews_text">There are no reviews for this movie.</string>
+    <string name="empty_videos_text">There are no videos for this movie.</string>
+    <string name="share_subject">Movie Trailer</string>
+    <string name="share_chooser">Share Movie Trailer</string>
+    <string name="added_favorites">This movie has been added to your favorites collection.</string>
+
+    <string name="sans_serif_light">sans-serif-light</string>
+    <string name="spinner_prompt">Sort by</string>
+
+    <!--Errors-->
+    <string name="no_internet">No Internet Connection!</string>
+    <string name="alert_dialog_title">Sorry!</string>
+    <string name="unknown_error">There was an error connecting to the server. Try again.</string>
+    <string name="timeout_error">The server is busy. Try again.</string>
+    <string name="unauthorized_error">You are not authorized to use this application.</string>
+    <string name="not_found_error">The requested resource could not be found or does not exist.</string>
+
+    <string name="grid_image">Grid Image</string>
+    <string name="backdrop_image">Backdrop Movie Image</string>
+    <string name="icon_rating">Rating Icon</string>
+    <string name="icon_runtime">Runtime Icon</string>
+    <string name="icon_calendar">Calendar Icon</string>
+    <string name="placeholder_icon">Placeholder Icon</string>
+    <string name="back_button">Back Button</string>
+    <string name="video_thumbnail">Video Thumbnail</string>
+    <string name="play_button">Play Video Button</string>
+    <string name="share_button">Share Button</string>
+    <string name="tmdb_logo">TMDb Logo</string>
+
+    <!--Sort strings-->
+    <string name="pref_popularity">Popularity</string>
+    <string name="pref_sort_type">Sort</string>
+    <string name="pref_rating">Rating</string>
+    <string name="pref_favorites">Favorites</string>
+    <string name="pref_sort_default_value">Popularity</string>
+    <string-array name="sort_array">
+        <item>Popularity</item>
+        <item>Rating</item>
+        <item>Favorites</item>
+    </string-array>
+
+</resources>

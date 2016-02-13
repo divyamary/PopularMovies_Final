@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!--Dropdown layout for spinner-->
+<CheckedTextView
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerDropDownItemStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:background="@color/grey_900"
+    android:checkMark="?android:attr/listChoiceIndicatorSingle"
+    android:fontFamily="sans-serif-medium"
+    android:gravity="center_vertical"
+    android:singleLine="true"
+    android:textColor="@color/grey_50"/>
