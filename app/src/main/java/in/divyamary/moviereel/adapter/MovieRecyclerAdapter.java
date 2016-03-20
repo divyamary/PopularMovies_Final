@@ -38,16 +38,29 @@ public class MovieRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.View
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        Movie movie = mMovieList.get(position);
+    public void onBindViewHolder(final RecyclerView.ViewHolder holder, int position) {
+        final Movie movie = mMovieList.get(position);
         Context context = ((ImageViewHolder) holder).imageView.getContext();
-        ((ImageViewHolder) holder).dateTextView.setText(Utils.getYearFromDate(movie.getReleaseDate()));
-        ((ImageViewHolder) holder).nameTextView.setText(movie.getTitle());
+        //((ImageViewHolder) holder).dateTextView.setText(Utils.getYearFromDate(movie.getReleaseDate()));
+        //((ImageViewHolder) holder).nameTextView.setText(movie.getTitle());
         Uri imageUri = Utils.getImageURI(context.getString(R.string.url_base_image),
                 context.getString(R.string.poster_image_size), movie.getPosterPath());
         Picasso.with(context)
                 .load(imageUri)
-                .into(((ImageViewHolder) holder).imageView);
+                .into(((ImageViewHolder) holder).imageView, new com.squareup.picasso.Callback() {
+                    @Override
+                    public void onSuccess() {
+                        ((ImageViewHolder) holder).dateTextView.setText(Utils.getYearFromDate(movie.getReleaseDate()));
+                        ((ImageViewHolder) holder).dateTextView.setVisibility(View.VISIBLE);
+                        ((ImageViewHolder) holder).nameTextView.setText(movie.getTitle());
+                        ((ImageViewHolder) holder).nameTextView.setVisibility(View.VISIBLE);
+                    }
+
+                    @Override
+                    public void onError() {
+
+                    }
+                });
     }
 
     @Override
