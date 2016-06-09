@@ -10,6 +10,23 @@ Popular Movies helps users discover popular and highly rated movies. This projec
 * The Movie Details screen also displays trailer videos and user reviews.
 * In the Movies Details screen, a user can tap on the Floating Action Button to mark it as a Favorite.
 * The Movie Details View includes an option that allows the user to share the trailer video of the selected movie.
+* Optimized for tablets. Tablet UI uses a Master-Detail layout.
+
+Main Grid View
+
+![Grid View](https://cloud.githubusercontent.com/assets/7263244/15932912/31f5ad8a-2e7b-11e6-915f-f710c2246cd1.png)
+
+Details View
+
+![Detail View](https://cloud.githubusercontent.com/assets/7263244/15932911/31f3aec2-2e7b-11e6-9ad1-ecadee6ecfbc.png)
+
+Details View
+
+![Detail View](https://cloud.githubusercontent.com/assets/7263244/15932913/31f7aa5e-2e7b-11e6-8c16-2077a60da1d8.png)
+
+Tablet View
+
+![Tablet View](https://cloud.githubusercontent.com/assets/7263244/15932910/31e7c01c-2e7b-11e6-81d2-4d0042c6bbfc.png)
 
 -------
 License
